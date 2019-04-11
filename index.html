@@ -1,35 +1,45 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <!-- sets title of page -->
   <title>Web Mapping HW#2</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <div class="banner-text">
-  <p>Pick a color scheme</p>
+  <!-- create div for banner containing buttons -->
+  <div class="banner">
+    <p>Pick a color scheme</p>
+    <hr />
+    <button id="button1">Citrus</button>
+    <button id="button2">Forest</button>
+    <button id="button3">NYU</button>
+  </div>
+
   <hr />
-  <button id="button1">Citrus</button>
-  <button id="button2">Forest</button>
-  <button id="button3">NYU</button>
-</div>
-<hr />
 
-<div >
-  <img class="picture">
+  <div class="wrap">  <!-- wrapper div for centering the two divs below -->
+    <!-- div that holds image -->
+    <div class='items'>
+      <img id="picture">
+    </div>
+
+    <!-- div that holds iframe with embedded music -->
+    <!-- these two divs are in the same class so they can aligned together on the page -->
+    <div class='items'>
+      <iframe id="sound-widget" width=275px scrolling="no" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337113552&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+    </iframe>
+  </div>
 </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

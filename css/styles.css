@@ -1,10 +1,14 @@
 body {
+  /* Sets initial loading background and page properties */
   background: white;
   padding: 20px;
   font-family: sans-serif;
+  transition:background-color 1s ease; /*for background color fade transitions*/
+
 }
 
-.banner-text {
+.banner {
+  /* Set initial properties for banner containing buttons */
   background: grey;
   border-radius: 4px;
   padding: 15px;
@@ -15,9 +19,11 @@ body {
   width: 300px;
   margin-left: auto;
   border: 5px solid steelblue;
+  transition:background-color 1s ease;
 }
 
 button {
+  /* set initial properties for buttons */
   background: steelblue;
   border: none;
   border-radius: 5px;
@@ -25,12 +31,27 @@ button {
   font-size: 15px;
   color: black;
   cursor: pointer;
+  transition:background-color 1s ease;
 }
 
-.picture {
-  display: block;
+.wrap {
+  /* center alignment for "items" divs */
+  text-align: center;
+}
+
+.items{
+  /* sets alignment for the picture and iframe divs */
+  display: inline;
+  margin: 0 auto;
+}
+
+#picture {
   width: 275px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 8px 14px;
+  transition: 1s ease;
+}
+
+#sound-widget {
+  /* hide widget on initial load */
+  visibility: hidden;
 }
